@@ -30,12 +30,12 @@ public class SlowFunctions {
 		System.out.println("slowSortLargeArray() Time: " + endTime + "\n\n");
 		
 		startTime = System.currentTimeMillis();
-		System.out.println("Starting ackermann(3, 14)...");
-		System.out.println("ackermann(3, 14): " + SlowFunctions.ackermann(3, 14));
-		System.out.println("ackermann(3, 14) Complete.");
+		System.out.println("Starting ackermann(3, 10)...");
+		System.out.println("ackermann(3, 10): " + SlowFunctions.ackermann(3, 10));
+		System.out.println("ackermann(3, 10) Complete.");
 		endTime = (float)((double)System.currentTimeMillis() - (double)startTime) / 1000.0f;
 		totalTime += endTime;
-		System.out.println("ackerman(3, 14) Time: " + endTime + "\n\n");
+		System.out.println("ackerman(3, 10) Time: " + endTime + "\n\n");
 		
 		System.out.println("Starting millionsOfSqrts()...");
 		SlowFunctions.millionsOfSqrts();
@@ -76,7 +76,7 @@ public class SlowFunctions {
 	}
 	
 	public static void millionsOfSqrts() {
-		for(int i = 0; i < 400000000; i++) {
+		for(int i = 0; i < 4000000; i++) {
 			double d = Math.sqrt(new Random().nextInt(Integer.MAX_VALUE));
 		}
 	}
